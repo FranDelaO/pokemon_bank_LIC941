@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon Bank | Iniciar sesión</title>
+  <!-- Bootstrap 4 (CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="login-fondo d-flex align-items-center">
+
+  <main class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-9 col-md-6 col-lg-4">
+        <div class="card login-card p-4">
+          <div class="text-center mb-3">
+            <img src="images/logo.svg" alt="Logo Pokémon Bank" width="72" class="mb-2">
+            <h1 class="logo-texto mb-0">Pokémon <span>Bank</span></h1>
+            <p class="text-muted mb-0">Cajero automático</p>
+          </div>
+
+          <form id="formLogin" action="acciones.html" autocomplete="off">
+            <div class="form-group">
+              <label for="pin" class="font-weight-bold">Ingrese su PIN</label>
+              <input type="password" id="pin" name="pin" class="form-control pin-input"
+                     maxlength="4" pattern="[0-9]{4}" inputmode="numeric"
+                     placeholder="••••" required>
+              <small class="form-text text-muted">El PIN debe tener 4 dígitos numéricos.</small>
+            </div>
+
+            <!-- Teclado numérico (en Fase 2 se le agrega funcionalidad con JS) -->
+            <div class="teclado mb-3">
+              <div class="row no-gutters">
+                <div class="col-4 p-1"><button type="button" class="btn btn-light btn-block">1</button></div>
+                <div class="col-4 p-1"><button type="button" class="btn btn-light btn-block">2</button></div>
+                <div class="col-4 p-1"><button type="button" class="btn btn-light btn-block">3</button></div>
+                <div class="col-4 p-1"><button type="button" class="btn btn-light btn-block">4</button></div>
+                <div class="col-4 p-1"><button type="button" class="btn btn-light btn-block">5</button></div>
+                <div class="col-4 p-1"><button type="button" class="btn btn-light btn-block">6</button></div>
+                <div class="col-4 p-1"><button type="button" class="btn btn-light btn-block">7</button></div>
+                <div class="col-4 p-1"><button type="button" class="btn btn-light btn-block">8</button></div>
+                <div class="col-4 p-1"><button type="button" class="btn btn-light btn-block">9</button></div>
+                <div class="col-4 p-1"><button type="button" class="btn btn-danger btn-block"><i class="bi bi-backspace"></i></button></div>
+                <div class="col-4 p-1"><button type="button" class="btn btn-light btn-block">0</button></div>
+                <div class="col-4 p-1"><button type="button" class="btn btn-secondary btn-block"><i class="bi bi-x-lg"></i></button></div>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-bank btn-lg btn-block">
+              <i class="bi bi-box-arrow-in-right"></i> Ingresar
+            </button>
+          </form>
+        </div>
+        <footer class="text-center mt-3 text-white-50">© 2026 Pokémon Bank · Proyecto LIC941</footer>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
