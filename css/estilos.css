@@ -1,0 +1,150 @@
+/* ===== Pokémon Bank ATM - Estilos personalizados ===== */
+:root {
+  --azul: #2a3d9e;
+  --azul-oscuro: #1b2766;
+  --amarillo: #ffcb05;
+  --rojo: #e3350d;
+  --verde: #2e9e5b;
+  --gris-claro: #f3f5fb;
+}
+
+body {
+  background: var(--gris-claro);
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  min-height: 100vh;
+}
+
+/* ---- Barra superior ---- */
+.navbar-bank {
+  background: var(--azul);
+  border-bottom: 4px solid var(--amarillo);
+}
+.navbar-bank .navbar-brand {
+  color: var(--amarillo);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.navbar-bank .nav-link,
+.navbar-bank .navbar-text { color: #fff; }
+.navbar-bank .nav-link:hover { color: var(--amarillo); }
+.navbar-bank .nav-link.active { color: var(--amarillo); font-weight: 600; }
+
+/* ---- Logo de texto ---- */
+.logo-texto {
+  font-weight: 800;
+  color: var(--azul);
+  font-size: 2rem;
+}
+.logo-texto span { color: var(--amarillo); text-shadow: 1px 1px 0 var(--azul-oscuro); }
+
+/* ---- Login ---- */
+.login-fondo {
+  background: linear-gradient(135deg, var(--azul) 0%, var(--azul-oscuro) 100%);
+}
+.login-card {
+  border: none;
+  border-top: 6px solid var(--amarillo);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+}
+.pin-input {
+  font-size: 2rem;
+  letter-spacing: 1rem;
+  text-align: center;
+}
+.teclado .btn {
+  font-size: 1.4rem;
+  height: 60px;
+  font-weight: 600;
+}
+
+/* ---- Tarjeta de cuenta ---- */
+.cuenta-card {
+  background: var(--azul);
+  color: #fff;
+  border-radius: 12px;
+  border-left: 8px solid var(--amarillo);
+}
+.cuenta-card .numero { font-family: monospace; font-size: 1.2rem; letter-spacing: 2px; }
+
+/* ---- Botones de acción ---- */
+.accion-card {
+  border: none;
+  border-radius: 12px;
+  transition: transform .15s, box-shadow .15s;
+  cursor: pointer;
+  height: 100%;
+}
+.accion-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
+}
+.accion-icono {
+  width: 64px; height: 64px;
+  border-radius: 50%;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 1.8rem;
+  margin-bottom: .5rem;
+  color: #fff;
+}
+.bg-deposito { background: var(--verde); }
+.bg-retiro   { background: var(--rojo); }
+.bg-saldo    { background: var(--azul); }
+.bg-servicio { background: #f08c00; }
+.bg-historial{ background: #6c5ce7; }
+.bg-grafico  { background: #00a8b5; }
+
+/* ---- Botones con colores de la marca ---- */
+.btn-bank {
+  background: var(--amarillo);
+  color: var(--azul-oscuro);
+  font-weight: 700;
+  border: none;
+}
+.btn-bank:hover { background: #e6b600; color: var(--azul-oscuro); }
+
+/* ---- Historial ---- */
+.badge-deposito { background: var(--verde); color: #fff; }
+.badge-retiro   { background: var(--rojo); color: #fff; }
+.badge-servicio { background: #f08c00; color: #fff; }
+.badge-saldo    { background: var(--azul); color: #fff; }
+.monto-positivo { color: var(--verde); font-weight: 600; }
+.monto-negativo { color: var(--rojo); font-weight: 600; }
+
+/* ---- Gráfico (solo CSS, Fase 1) ---- */
+.grafico-barras {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 260px;
+  border-left: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  padding: 0 10px;
+}
+.barra {
+  width: 18%;
+  border-radius: 6px 6px 0 0;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  padding-top: 6px;
+}
+.barra-etiqueta {
+  display: flex;
+  justify-content: space-around;
+  font-size: .85rem;
+  margin-top: 6px;
+}
+.barra-etiqueta span { width: 18%; text-align: center; }
+
+footer {
+  color: #888;
+  font-size: .85rem;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 576px) {
+  .pin-input { font-size: 1.5rem; letter-spacing: .6rem; }
+  .logo-texto { font-size: 1.6rem; }
+}
