@@ -1,7 +1,7 @@
 # Pokémon Bank – Cajero Automático (ATM)
 
 Interfaz web que simula un cajero automático para **Pokémon Bank**.
-Proyecto Fase 1 · Lenguajes Interpretados en el Cliente · Universidad Don Bosco.
+Fase 1 · Lenguajes Interpretados en el Cliente (LIC941) 
 
 ## Pantallas
 - **Login** (`index.html`): ingreso con PIN de 4 dígitos.
@@ -13,8 +13,12 @@ Proyecto Fase 1 · Lenguajes Interpretados en el Cliente · Universidad Don Bosc
 HTML5 · CSS3 · Bootstrap 4.6 · Git y GitHub
 
 
+
 ```bash
 git clone https://github.com/FranDelaO/pokemon_bank_LIC941.git
 ```
 
-DG200722
+## Integrantes
+AC250260
+DG200422
+RE252692
