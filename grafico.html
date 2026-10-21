@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon Bank | Gráfico</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-dark navbar-bank">
+    <a class="navbar-brand" href="acciones.html"><img src="images/logo.svg" alt="" width="30" class="mr-1"> Pokémon Bank</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="acciones.html"><i class="bi bi-grid"></i> Acciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="historial.html"><i class="bi bi-clock-history"></i> Historial</a></li>
+        <li class="nav-item"><a class="nav-link active" href="grafico.html"><i class="bi bi-bar-chart"></i> Gráfico</a></li>
+      </ul>
+      <a href="index.html" class="btn btn-outline-light btn-sm"><i class="bi bi-box-arrow-left"></i> Salir</a>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+    <h1 class="h4 mb-3"><i class="bi bi-bar-chart"></i> Análisis de transacciones</h1>
+
+    <div class="row">
+      <!-- Gráfico (maqueta con CSS; en Fase 2 se reemplaza por Chart.js en un <canvas>) -->
+      <div class="col-lg-8 mb-4">
+        <div class="card shadow-sm p-3 h-100">
+          <h2 class="h6 text-muted">Cantidad de transacciones por tipo</h2>
+          <div class="grafico-barras mt-3">
+            <div class="barra bg-deposito" style="height: 50%;">1</div>
+            <div class="barra bg-retiro"   style="height: 100%;">2</div>
+            <div class="barra bg-servicio" style="height: 100%;">2</div>
+            <div class="barra bg-saldo"    style="height: 50%;">1</div>
+          </div>
+          <div class="barra-etiqueta">
+            <span>Depósitos</span><span>Retiros</span><span>Servicios</span><span>Consultas</span>
+          </div>
+          <!-- <canvas id="graficoTransacciones"></canvas>  ← Fase 2 -->
+        </div>
+      </div>
+
+      <!-- Resumen -->
+      <div class="col-lg-4 mb-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-header bg-white font-weight-bold">Resumen</div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-between">
+              <span><i class="bi bi-circle-fill text-success"></i> Depósitos</span><strong>$150.00</strong>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span><i class="bi bi-circle-fill text-danger"></i> Retiros</span><strong>$90.00</strong>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span><i class="bi bi-circle-fill text-warning"></i> Servicios</span><strong>$60.00</strong>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span><i class="bi bi-circle-fill text-primary"></i> Consultas</span><strong>1</strong>
+            </li>
+          </ul>
+          <div class="card-footer bg-white">
+            <a href="acciones.html" class="btn btn-bank btn-block"><i class="bi bi-arrow-left"></i> Volver a acciones</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

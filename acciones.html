@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon Bank | Acciones</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-md navbar-dark navbar-bank">
+    <a class="navbar-brand" href="acciones.html"><img src="images/logo.svg" alt="" width="30" class="mr-1"> Pokémon Bank</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link active" href="acciones.html"><i class="bi bi-grid"></i> Acciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="historial.html"><i class="bi bi-clock-history"></i> Historial</a></li>
+        <li class="nav-item"><a class="nav-link" href="grafico.html"><i class="bi bi-bar-chart"></i> Gráfico</a></li>
+      </ul>
+      <a href="index.html" class="btn btn-outline-light btn-sm"><i class="bi bi-box-arrow-left"></i> Salir</a>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+
+    <!-- Datos del titular -->
+    <section class="card cuenta-card p-4 mb-4">
+      <div class="d-flex flex-wrap justify-content-between align-items-center">
+        <div>
+          <small class="text-white-50">Titular de la cuenta</small>
+          <h2 class="h4 mb-1">Juan Pérez</h2>
+          <span class="numero">0987-6543-2100</span>
+        </div>
+        <div class="text-md-right mt-3 mt-md-0">
+          <small class="text-white-50">Tipo de cuenta</small>
+          <p class="h5 mb-0">Ahorro</p>
+        </div>
+      </div>
+    </section>
+
+    <h3 class="h5 mb-3">¿Qué desea realizar?</h3>
+
+    <!-- Acciones -->
+    <section class="row">
+      <div class="col-6 col-md-4 mb-4">
+        <div class="card accion-card text-center p-3" data-toggle="modal" data-target="#modalDeposito">
+          <div><span class="accion-icono bg-deposito"><i class="bi bi-cash-stack"></i></span></div>
+          <h4 class="h6 mb-0">Depositar</h4>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 mb-4">
+        <div class="card accion-card text-center p-3" data-toggle="modal" data-target="#modalRetiro">
+          <div><span class="accion-icono bg-retiro"><i class="bi bi-wallet2"></i></span></div>
+          <h4 class="h6 mb-0">Retirar</h4>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 mb-4">
+        <div class="card accion-card text-center p-3" data-toggle="modal" data-target="#modalSaldo">
+          <div><span class="accion-icono bg-saldo"><i class="bi bi-eye"></i></span></div>
+          <h4 class="h6 mb-0">Consultar saldo</h4>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 mb-4">
+        <div class="card accion-card text-center p-3" data-toggle="modal" data-target="#modalServicios">
+          <div><span class="accion-icono bg-servicio"><i class="bi bi-receipt"></i></span></div>
+          <h4 class="h6 mb-0">Pagar servicios</h4>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 mb-4">
+        <a href="historial.html" class="card accion-card text-center p-3 text-dark text-decoration-none">
+          <div><span class="accion-icono bg-historial"><i class="bi bi-clock-history"></i></span></div>
+          <h4 class="h6 mb-0">Historial</h4>
+        </a>
+      </div>
+      <div class="col-6 col-md-4 mb-4">
+        <a href="grafico.html" class="card accion-card text-center p-3 text-dark text-decoration-none">
+          <div><span class="accion-icono bg-grafico"><i class="bi bi-pie-chart"></i></span></div>
+          <h4 class="h6 mb-0">Gráfico</h4>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  
+
+  <footer class="text-center py-3">© 2026 Pokémon Bank · Proyecto LIC941</footer>
+
+  <!-- JS de Bootstrap (necesario para menú y modales) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
