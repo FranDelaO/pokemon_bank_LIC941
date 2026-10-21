@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pokémon Bank | Iniciar sesión</title>
+  <title>Pokémon Bank | Inicio Sesión</title>
+  <!-- Añadiendo estilos personalizados -->
   <!-- Bootstrap 4 (CDN) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
   <!-- Iconos -->
@@ -11,6 +12,8 @@
   <!-- Estilos propios -->
   <link rel="stylesheet" href="css/estilos.css">
 </head>
+
+
 <body class="login-fondo d-flex align-items-center">
 
   <main class="container">
@@ -18,8 +21,8 @@
       <div class="col-12 col-sm-9 col-md-6 col-lg-4">
         <div class="card login-card p-4">
           <div class="text-center mb-3">
-            <img src="images/logo.svg" alt="Logo Pokémon Bank" width="72" class="mb-2">
-            <h1 class="logo-texto mb-0">Pokémon <span>Bank</span></h1>
+            <img src="images/logo poke.png" alt="Logo Pokémon Bank" width="175" class="mb-2">
+           
             <p class="text-muted mb-0">Cajero automático</p>
           </div>
 
@@ -29,10 +32,9 @@
               <input type="password" id="pin" name="pin" class="form-control pin-input"
                      maxlength="4" pattern="[0-9]{4}" inputmode="numeric"
                      placeholder="••••" required>
-              <small class="form-text text-muted">El PIN debe tener 4 dígitos numéricos.</small>
             </div>
 
-            <!-- Teclado numérico (en Fase 2 se le agrega funcionalidad con JS) -->
+            <!-- Teclado numérico solamente visual no tiene funcionalidad) -->
             <div class="teclado mb-3">
               <div class="row no-gutters">
                 <div class="col-4 p-1"><button type="button" class="btn btn-light btn-block">1</button></div>
@@ -55,7 +57,7 @@
             </button>
           </form>
         </div>
-        <footer class="text-center mt-3 text-white-50">© 2026 Pokémon Bank · Proyecto LIC941</footer>
+        <footer class="text-center mt-3 text-white-50">Pokémon Bank · FASE 1 Proyecto LIC941 </footer>
       </div>
     </div>
   </main>
